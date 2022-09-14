@@ -1,0 +1,42 @@
+name: Elogin
+version: '1.0'
+main: me.elogin.elogin.Elogin
+api-version: 1.15
+authors: [ YYDS_QAQ1024 ]
+description: easy login 简易登录
+
+commands:
+  delete:
+    description: 注销
+
+  login:
+    description: 登录
+    aliases: l
+
+  register:
+    description: 注册
+    aliases: reg
+
+  changepassword:
+    description: 修改密码
+    aliases: changepw
+
+  loginback:
+    description: 设置登录后返回地点
+    permission: e.loginback.cmd
+    permission-message: 你没有指令权限！
+
+  loginto:
+    description: 设置登录前位置
+    permission: e.loginto.cmd
+    permission-message: 你没有指令权限！
+
+  setlength:
+    description: 设置密码最小位数
+    permission: e.length.cmd
+    permission-message: 你没有指令权限！
+
+  Activateaccount:
+    description: 激活账号
+    permission: e.att.cmd
+    permission-message: 你没有指令权限！
